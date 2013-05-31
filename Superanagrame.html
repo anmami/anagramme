@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset='utf-8'> 
   <meta http-equiv='Content-Type'>
   <title> SUPER ANAGRAMME </title>
-  <style> h1{color:#FF0000;text-align:center;} </style>
+  <style> h1{color:#000000;text-align:center;} </style>
 </head>
-<body bgcolor="#FFCC99">
+<body bgcolor="#90EE90">
   <h1> SUPER ANAGRAMME </h1>
     <P style="text-align:center"><img src="http://uprapide.com/images/invite/sans-titre-2_467.bmp"></P>
-    <P> Bienvenue sur le meilleur site d'anagramme du net ! N'hésitez pas à entrer vos lettres, nous serons trouver les mots ! </P>
+    <P> <FONT size="4pt"; face="verdana"> Bienvenue sur le meilleur site d'anagramme du net ! N'hésitez pas à entrer vos lettres, nous serons trouver les mots ! </P>
+    <P> Choisir la langue :</P>
     <form>
-    lettres: <input type="text" name="lettres"> 
+    <input type="checkbox" name="Langue" value="Français">Français<br>
+    <input type="checkbox" name="Langue" value="Anglais">Anglais<br>
+    <br> 
     </form>
+    <form name="input" action="html_form_action.asp" method="get">
+    Lettres: <input type="text" name="user">
+    <input type="Submit" value="Envoyer"> </FONT> 
+    </form> 
+    
+
 </html>

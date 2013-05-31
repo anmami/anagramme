@@ -6,6 +6,15 @@ def anagrame(x):
     else:
         return list(set([x[i] + d for i in range(len(x)) for d in anagrame(x[:i]+x[i+1:])]))
  
-test = ['barbier']
-for a in test:
-    print(anagrame(a))
+anag = set(anagrame("damien"))
+
+with open("french-wordlist-accent.txt","r") as dico:
+    tmots = dico.readlines()
+
+mots = set([ mot[0:-2] for mot in tmots ])
+
+print mots.intersection(anag)
+
+with open("","r") as dico:
+    tmots = dico.readlines()
+mots = set([ mots[0:-2] for mot in tmots ])
